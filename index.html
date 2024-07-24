@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta tag -->
+    <meta  name="title" content="Devfolio - A Front-End developer portfolio">
+    <title>Faiz Ali Khan - Front-End developer</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./asset//images//favicon.svg" type="image/x-icon">
+
+    <!-- google-font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500&display=swap"
+  rel="stylesheet">
+
+  <!-- material icon -->
+  <link rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<!-- font-awesome -->
+
+<script src="https://kit.fontawesome.com/1b556b3d1e.js" crossorigin="anonymous"></script>
+
+<!-- custom css link -->
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+
+    <div id="loading-container">
+        <div id="loading-bar"></div>
+      </div>
+      <div id="portfolio-container" style="display: none;">
+       
+      </div>
+
+
+    <!-- top bar  -->
+
+    <header class="topbar">
+        <a href="#" class="logo">
+            <img src="./assets//images//Logo_dark.png" alt="Devfolio" class="dark" width="145" height="32" >
+
+            <img src="./assets//images/Logo_light.png" alt="Devfolio" class="light" width="145" height="32">
+        </a>
+
+        <button class="icon-btn theme-btn" data-theme-btn>
+            <span class="material-symbols-outlined dark" aria-hidden="true"> dark_mode </span>
+
+            <span class="material-symbols-outlined light" aria-hidden="true"> light_mode </span>
+
+            <div class="state-layer"></div>
+        </button>
+    </header>
+
+
+    <!-- main -->
+
+    <main>
+        <article>
+
+            <!-- hero -->
+
+            <section class="section hero">
+                <div class="container">
+                    <figure class="hero-banner img-holder" style="--width:240; --height:240">
+
+                        <img src="./assets/images/profile.jpg" alt="Faiz Ali Khan" class="img-cover" width="240" height="240">
+
+                    </figure>
+
+                    <div class="hero-content">
+                        <!-- <span class="title-large section-subtitle">Front-End Developer</span> -->
+
+                        <span class="title-large section-subtitle">
+                            <span class="typing-animation" id="developer-title"></span>
+                          </span>
+                          
+                          
+
+
+                        <h1 class="display-small">Faiz Ali Khan</h1>
+
+                        <p class="body-large section-text">
+                            Sculpting Digital Masterpieces with the Magic of ReactJS for Stunning User Experiences
+                        </p>
+
+
+                        <div class="btn-wrapper">
+                            <a href="mailto:faizalikhan619@gmail.com" class="chip">
+                                <span class="material-symbols-outlined" aria-hidden="true"> mail </span>
+
+                                <span class="label-large">faizalikhan619@gmail.com</span>
+
+                                <div class="state-layer"></div>
+                            </a>
+                          
+                            </a>
+                            <a href="tel:9142202914" class="chip">
+                                <span class="material-symbols-outlined" aria-hidden="true"> call </span>
+
+                                
+                                <span class="label-large">9142202914 , 7493092268</span>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </section>
+
+
+            <!-- main content -->
+
+            <div class="article">
+                <div class="about-card">
+                    <h2 class="card-title title-medium">About</h2>
+
+                    <p class="body-medium card-text">
+                        🚀 As a frontend developer, I consider myself a digital artisan, weaving the magic of React, HTML, CSS, and JavaScript. My journey began after graduating, and with every project, I've refined my skills in crafting user-friendly interfaces.
+                        <br><br>
+
+                         🎨 Projects have become my canvas to bring creativity to life, bridging the realms of design and code. I thrive on turning concepts into captivating web experiences. The ever-evolving web landscape excites me, and I'm committed to continuous learning.
+                                      <br><br>
+
+                        🌱 Eager to embark on my career, I bring enthusiasm, adaptability, and a commitment to growth. Join me in creating the future of web experiences.
+                    </p>
+
+                    <ul class="about-list">
+                        <li class="list-item">
+                            <span class="material-symbols-outlined" aria-hidden="true"> location_on </span>
+                            <!-- <span class="label-medium">Chennai,India</span> -->
+
+                            <a href="#"><span class="label-medium">Delhi, India</span></a>
+                        </li>
+
+
+
+                        <li class="list-item">
+
+                           <br> <i class="fa fa-github" aria-hidden="true"></i> <br>
+                            <!-- <span class="material-symbols-outlined" aria-hidden="true"> linked_in </span> -->
+                            <a href="https://github.com/faizukhan619" target="_blank"><span class="label-medium">faizukhan619 - GitHub</span></a>
+                        </li>
+
+                        <li class="list-item">
+
+                            <br> <i class="fa fa-linkedin" aria-hidden="true"></i> <br>
+                            <!-- <span class="material-symbols-outlined" aria-hidden="true"> link </span> -->
+                            <a href="https://www.linkedin.com/in/mr-faiz-ali-khan/" target="_blank"><span class="label-medium">mr-faiz-ali-khan- LinkedIn</span></a>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+
+                <div>
+
+
+                    <!-- primary tabs -->
+
+                    <div class="primary-tabs">
+                        <button class="tab-btn active" data-tab-btn="project">
+
+                            <span class="tab-text title-small">Projects</span>
+
+                            <div class="state-layer"></div>
+
+                        </button>
+
+
+                        <button class="tab-btn" data-tab-btn="resume">
+
+                            <span class="tab-text title-small">Odyssey</span>
+
+                            <div class="state-layer"></div>
+
+                        </button>
+
+                        <button class="tab-btn" data-tab-btn="contact">
+
+                            <span class="tab-text title-small">Contact</span>
+
+                            <div class="state-layer"></div>
+
+                        </button>
+
+                        <button class="tab-btn" data-tab-btn="about">
+
+                            <span class="tab-text title-small">Visionary</span>
+
+                            <div class="state-layer"></div>
+
+                        </button>
+                    </div>
+
+
+                    <!-- project -->
+
+                    <section class="section tab-content active " data-tab-content="project">
+                        <div class="container">
+                            <div class="project-list">
+
+                              
+
+                                  <div class="card">
+                                    
+                                        <figure class="card-banner img-holder" style="--width:334; --height:180">
+                                            <img src="./assets/images/photography.png" alt="newsGrid" class="img-cover" width="334" height="180">
+                                        </figure>
+                                   
+                                    
+                                    <div class="card-content">
+                                        <span class="label-large card-subtitle">Website</span>
+                                        <h3 class="title-large card-title">Photography- Photography Website </h3>
+                                       
+                                    </div>
+
+                                    
+
+                                    <a href="#" class="state-layer"></a>
+                                   
+                                </div>
+
+                                <div class="project-description">
+                                    <p>Photography : A photography website serves as a digital portfolio and showcase for photographers to display their work, attract clients, and build their brand. Key features and elements typically found on a photography website.</p>
+                                   <div class="project-viewer">
+                                    <a href="https://github.com/faizukhan619/CSS-Project-5" target="_blank">view code</a>
+                                    <a href="https://html-css-project-5-alpha.vercel.app/" target="_blank">Live Demo</a>
+                                   </div>
+                                </div>
+
+
+                                 <div class="card">
+                                    
+                                        <figure class="card-banner img-holder" style="--width:334; --height:180">
+                                            <img src="./assets/images/Obys.png" alt="newsGrid" class="img-cover" width="334" height="180">
+                                        </figure>
+                                   
+                                    
+                                    <div class="card-content">
+                                        <span class="label-large card-subtitle">Website</span>
+                                        <h3 class="title-large card-title">Obys Agency- Obys Agency Website </h3>
+                                       
+                                    </div>
+
+                                    
+
+                                    <a href="#" class="state-layer"></a>
+                                   
+                                </div>
+
+                                <div class="project-description">
+                                    <p>Obys Agency : An "Obys Agency" website could represent a creative or digital agency specializing in various services such as web design, branding, marketing, and digital strategy. The website would typically showcase the agency's portfolio, highlighting past projects and client successes.</p>
+                                   <div class="project-viewer">
+                                    <a href="https://github.com/faizukhan619/Obey-Agency-Project-using-Html-Css-Javascript.io" target="_blank">view code</a>
+                                    <a href="https://obey-agency-project.vercel.app/" target="_blank">Live Demo</a>
+                                   </div>
+                                </div>
+
+                            <!-- NewsGrid -->
+
+                                <div class="card">
+                                    
+                                        <figure class="card-banner img-holder" style="--width:334; --height:180">
+                                            <img src="./assets/images/newsgrid.png" alt="newsGrid" class="img-cover" width="334" height="180">
+                                        </figure>
+                                   
+                                    
+                                    <div class="card-content">
+                                        <span class="label-large card-subtitle">Website</span>
+                                        <h3 class="title-large card-title">NewsGrid - A News Blog</h3>
+                                       
+                                    </div>
+
+                                    
+
+                                    <a href="#" class="state-layer"></a>
+                                   
+                                </div>
+
+                                <div class="project-description">
+                                    <p>News-Grid : News Grid is a modern news blog app with a visually appealing grid layout, offering real-time updates from trusted sources. It showcases my early frontend development skills.Utilizing the power of HTML, CSS.I helped create an interactive and informative user experience."</p>
+                                   <div class="project-viewer">
+                                    <a href="https://github.com/faizukhan619/NewsGrid.github.io" target="_blank">view code</a>
+                                    <a href="https://newsgrid-newsblog.netlify.app/" target="_blank">Live Demo</a>
+                                   </div>
+                                </div>
+                                
+
+
+                                <!-- To-do List App -->
+
+                                <div class="card">
+                                    <figure class="card-banner img-holder" style="--width:334; --height:180">
+                                        <img src="./assets/images/to-do.png" alt="evara" class="img-cover" width="334" height="180">
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <span class="label-large card-subtitle">WebApp</span>
+                                        <h3 class="title-large card-title">To-DO List App - help users organize tasks </h3>
+                                        
+
+                                       
+                                    </div>
+                                    <a href="#" class="state-layer"></a>
+                                </div>
+
+                                 <div class="project-description">
+                                    <p>To-DO List App :A to-do list app is a tool designed to help users organize tasks, manage their time effectively, and increase productivity, categorize tasks by projects or tags, and track their progress. Many to-do list apps offer additional features such as reminders,deletion</p>
+                                   <div class="project-viewer">
+                                    <a href="https://github.com/faizukhan619/To-Do-List-Project.io" target="_blank">view code</a>
+                                    <a href="https://my-to-do-list-project.vercel.app/" target="_blank">Live Demo</a>
+                                   </div>
+                                </div>
+
+
+                                <!-- Mordern Website -->
+                                
+                                   <div class="card">
+                                    
+                                        <figure class="card-banner img-holder" style="--width:334; --height:180">
+                                            <img src="./assets/images/modern.png" alt="Mordern website" class="img-cover" width="334" height="180">
+                                        </figure>
+                                   
+                                    
+                                    <div class="card-content">
+                                        <span class="label-large card-subtitle">Website</span>
+                                        <h3 class="title-large card-title">Modern Website- modern website involves designing </h3>
+                                       
+                                    </div>
+
+                                    
+
+                                    <a href="#" class="state-layer"></a>
+                                   
+                                </div>
+
+                                <div class="project-description">
+                                    <p>Modern Website : Creating a modern website involves designing and developing a digital presence that reflects current design trends, prioritizes user experience, and leverages the latest web technologies. Here are key characteristics and elements of a modern website.</p>
+                                   <div class="project-viewer">
+                                    <a href="https://github.com/faizukhan619/CSS-Project-4" target="_blank">view code</a>
+                                    <a href="https://html-css-project-4-kappa.vercel.app/" target="_blank">Live Demo</a>
+                                   </div>
+                                </div>
+
+                                <!-- gpt -->
+
+
+                                <div class="card">
+                                    <figure class="card-banner img-holder" style="--width:334; --height:180">
+                                        <img src="./assets/images/gpt3.png" alt="gpt3" class="img-cover" width="334" height="180">
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <span class="label-large card-subtitle">Website</span>
+                                        <h3 class="title-large card-title">GPT3 - AI influencer</h3>
+                                       
+                                    </div>
+                                    <a href="#" class="state-layer"></a>
+  
+                                </div>
+
+                                <div class="project-description">
+                                    <p>GPT-3 Landing Page : My React-based project showcases my foundational skills in web development. Designed for an AI-focused project, this landing page introduces the intriguing world of AI influence through an engaging and responsive user interface.</p>
+                                   <div class="project-viewer">
+                                    <a href="https://github.com/faizukhan619/GPT-3" target="_blank">view code</a>
+                                    <a href="https://gpt3-openai-react.netlify.app/" target="_blank">Live Demo</a>
+                                   </div>
+                                </div>
+
+                                <!-- car rental webpage -->
+                                <div class="card">
+                                    <figure class="card-banner img-holder" style="--width:334; --height:180">
+                                        <img src="./assets/images/car-rent.png" alt="car-rent" class="img-cover" width="334" height="180">
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <span class="label-large card-subtitle">Website</span>
+                                        <h3 class="title-large card-title">Rent-car Service</h3>
+                                       
+                                    </div>
+                                    <a href="#" class="state-layer"></a>
+  
+                                </div>
+
+                                <div class="project-description">
+                                    <p>Car-Rent Service : Developed a dynamic web application using React for a car rental service. This feature-rich site enabling users to rent cars and provide reviews. The use of React enhances interactivity and ensures a seamless user experience.</p>
+                                   <div class="project-viewer">
+                                    <a href="https://github.com/faizukhan619/Car-Rent" target="_blank">view code</a>
+                                    <a href="https://rent-car-react.netlify.app/" target="_blank">Live Demo</a>
+                                   </div>
+                                </div>
+
+
+                                <!-- blooger -->
+
+
+                                <div class="card">
+                                    <figure class="card-banner img-holder" style="--width:334; --height:180">
+                                        <img src="./assets/images/blooger.png" alt="blooger" class="img-cover" width="334" height="180">
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <span class="label-large card-subtitle">Website</span>
+                                        <h3 class="title-large card-title">Blooger - A blog Page</h3>
+                                        
+                                       
+                                    </div>
+
+                                    <a href="#" class="state-layer"></a>
+                                    
+                                </div>
+
+                                <div class="project-description">
+                                    <p>Blooger : My travel blog page designed with passion. It's a place where I share my wanderlust adventures and travel insights with the world, expressing my love for both travel and web development.</p>
+                                   <div class="project-viewer">
+                                    <a href="https://github.com/faizukhan619/Bloger_website.github.io" target="_blank">view code</a>
+                                    <a href="https://blooger-blogs.netlify.app" target="_blank">Live Demo</a>
+                                   </div>
+                                </div>
+
+
+                            <!-- music website -->
+
+                           <div class="card">
+                                    <figure class="card-banner img-holder" style="--width:334; --height:180">
+                                        <img src="./assets/images/MyTune.png" alt="Music" class="img-cover" width="334" height="180">
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <span class="label-large card-subtitle">Website</span>
+                                        <h3 class="title-large card-title">Music - MyTune website</h3>
+                                        
+                                       
+                                    </div>
+
+                                    <a href="#" class="state-layer"></a>
+                                    
+                                </div>
+
+                                <div class="project-description">
+                                    <p>Music : A music MyTune website is a platform designed for music enthusiasts to discover, listen to, and share music. It typically allows users to create personal playlists, Users can often stream music directly from the website</p>
+                                   <div class="project-viewer">
+                                    <a href="https://github.com/faizukhan619/music-website.io" target="_blank">view code</a>
+                                    <a href="https://music-website-rouge-psi.vercel.app/" target="_blank">Live Demo</a>
+                                   </div>
+                                </div>
+
+
+
+                            </div>
+
+                            
+                        </div>
+                    </section>
+
+
+
+
+
+                    <!-- resume -->
+
+                    <section class="section tab-content resume-tab" data-tab-content="resume">
+                        <div class="container">
+                            <h2 class="section-title title-small">Personalisation</h2>
+
+                            <ul class="list">
+                                <li class="resume-item">
+                                    <div class="resume-card">
+                                      
+
+                                       <span class="body-medium card-text">As a budding React virtuoso 🚀, I'm fervently dedicated to crafting web experiences that transcend the ordinary, infusing every pixel with elegance and enchantment ✨. My unwavering passion for unraveling intricate challenges fuels my odyssey in the realm of front-end wizardry 🧙. The prospect of harmonizing with a dynamic ensemble 🤝, while imbibing wisdom from industry sages 🧠, thrills me as I amplify my proficiencies in this ever-mutating domain 🌐.</span>
+
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <hr><br>
+
+                            <!-- Education -->
+                            <h2 class="section-title title-small">Education</h2>
+
+                            <ul class="list">
+
+                                <li class="resume-item">
+                                    <div class="resume-card">
+                                        <p class="body-large">
+                                            Certification in Web Development with React.js (Front-End Certification)
+                                        </p>
+                                        <p class="body-medium">
+                                            Received specialized training in frontend development, gaining proficiency in HTML, CSS, JavaScript, and modern web technologies. 
+                                        </p>
+                                        
+                                    </div>
+                                </li>
+
+                                <li class="resume-item">
+                                    <div class="resume-card">
+                                        <p class="body-large">
+                                            Master of computer application (BCA), From Lalit Narayan Mithila University.
+                                        </p>
+                                        <p class="body-medium">
+                                            Maintained a strong academic record, focusing on core engineering principles and problem-solving.
+                                        </p>
+                                        <div class="edu-detail">
+                                            <span class="label-medium card-subtitle">L.N.M.U : 2018 - 2021</span>
+                                            <span class="label-medium card-subtitle">Percentage : 80%</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="resume-item">
+                                    <div class="resume-card">
+                                        <p class="body-large">
+                                            Higher Secondary Education: Millat College Darbhanga
+                                        </p>
+                                        <p class="body-medium">
+                                            Excelled in a rigorous science and mathematics-focused curriculum during higher secondary education.
+                                        </p>
+                                       
+                                        <div class="edu-detail">
+                                            <span class="label-medium card-subtitle">B.S.E.B : 2016 - 2018</span>
+                                            <span class="label-medium card-subtitle">Percentage : 55.5%</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="resume-item">
+                                    <div class="resume-card">
+                                        <p class="body-large">
+                                            Secondary Education: Angel's High School
+                                        </p>
+                                        <p class="body-medium">
+                                            Surpassed all academic expectations in a challenging curriculum during my 10th standard education.
+                                        </p>
+                                       
+                                        <div class="edu-detail">
+                                            <span class="label-medium card-subtitle">C.B.S.E : 2014 - 2015</span>
+                                            <span class="label-medium card-subtitle">Marks : 8.2 CGPA</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                
+                            </ul>
+
+                            <hr><br>
+
+
+                            <!-- skills and technologies -->
+                            
+                            <h2 class="section-title title-large">Skills and Technologies</h2>
+
+                            <ul class="resume-bottom-list">
+                                <li class="resume-bottom-item">
+                                    <img src="./assets/images/html5.svg" alt="HTML5" class="icon" width="28" height="28" loading="lazy">
+                                    <span class="label-medium">HTML5</span>
+                                </li>
+
+                                <li class="resume-bottom-item">
+                                    <img src="./assets/images/css3.svg" alt="CSS3" class="icon" width="28" height="28" loading="lazy">
+                                    <span class="label-medium">CSS3</span>
+                                </li>
+
+                                <li class="resume-bottom-item">
+                                    <img src="./assets/images/bootstrap-5-1.svg" alt="Bootstrap" class="icon" width="28" height="28" loading="lazy">
+                                    <span class="label-medium">BootStrap</span>
+                                </li>
+
+                                <li class="resume-bottom-item">
+                                    <img src="./assets/images/javascript.svg" alt="Javascript" class="icon" width="28" height="28" loading="lazy">
+                                    <span class="label-medium">JavaScript</span>
+                                </li>
+
+                                <li class="resume-bottom-item">
+                                    <img src="./assets/images/react.js.svg" alt="Reactjs" class="icon" width="28" height="28" loading="lazy">
+                                    <span class="label-medium">ReactJs</span>
+                                </li>
+
+                                <li class="resume-bottom-item">
+                                    <img src="./assets/images/redux.svg" alt="Redux" class="icon" width="28" height="28" loading="lazy">
+                                    <span class="label-medium">Redux</span>
+                                </li>
+
+                                <li class="resume-bottom-item">
+                                    <img src="./assets/images/VS_code.svg" alt="VS_Code" class="icon" width="28" height="28" loading="lazy">
+                                    <span class="label-medium">VS Code</span>
+                                </li>
+
+                                <li class="resume-bottom-item">
+                                    <img src="./assets/images/github.svg" alt="Git" class="icon" width="28" height="28" loading="lazy">
+                                    <span class="label-medium">GitHub</span>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+                    </section>
+
+                    <!--  contact form -->
+
+                    <section class="section tab-content contact-tab" data-tab-content="contact">
+
+                        <div class="container">
+                          <div class="contact-info">
+                            <h4 class="section-title title-small">
+                                Contact Info
+                            </h4>
+
+                            <ul class="contact-info-list">
+                                <li class="contact-info-item">
+                                    <div class="icon-box">
+                                        <span class="material-symbols-outlined" aria-hidden="true"> mail </span>
+                                    </div>
+
+                                    <div class="info-content">
+                                        <p class="label-small info-title">Mail </p>
+                                        <a href="mailto:faizalikhan619@gmail.com" class="label-small info-text">faizalikhan619@gmail.com</a>
+                                        
+                                    </div>
+                                </li>
+
+                                <li class="contact-info-item">
+                                    <div class="icon-box">
+                                        <span class="material-symbols-outlined" aria-hidden="true"> call </span>
+                                    </div>
+
+                                    <div class="info-content">
+                                        <p class="label-small info-title">Contact Me</p>
+                                        <a href="tel:9142202914" class="label-small info-text">9142202914</a>
+                                        <a href="tel:7493092268" class="label-small info-text">7493092268</a>
+                                    </div>
+                                </li>
+
+                                <li class="contact-info-item">
+                                    <div class="icon-box">
+                                        <span class="material-symbols-outlined" aria-hidden="true"> location_on </span>
+                                    </div>
+
+                                    <div class="info-content">
+                                        <p class="label-small info-title">Address</p>
+                                        <a href="#" class="label-small info-text">Delhi, India</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                            <!-- social links -->
+                            <h4 class="title-small">Social Info</h4>
+
+                            <div class="social-list">
+                                <a href="https://www.instagram.com/faizukhan619/" target="_blank" class="social-item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_66_1657)">
+                                          <mask id="mask0_66_1657" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                                            width="24" height="24">
+                                            <path d="M0 7.05719e-05H23.9999V24H0V7.05719e-05Z" fill="white" />
+                                          </mask>
+                                          <g mask="url(#mask0_66_1657)">
+                                            <path
+                                              d="M23.062 12C23.0596 12.9866 23.0485 13.9731 23.035 14.9596C23.0187 16.1498 23.0003 17.3405 22.7018 18.5103C22.3888 19.7371 21.7715 20.795 20.811 21.5783C19.7989 22.4036 18.5755 22.8375 17.2552 22.9178C15.5039 23.0243 13.7519 23.0664 12 23.0622C10.248 23.0664 8.496 23.0243 6.7448 22.9178C5.42443 22.8375 4.20109 22.4036 3.18897 21.5783C2.2285 20.795 1.61116 19.7371 1.29813 18.5103C0.999629 17.3405 0.981255 16.1498 0.964989 14.9596C0.951489 13.9731 0.940285 12.9866 0.937988 12C0.940285 11.0135 0.951489 10.0269 0.964989 9.04045C0.981255 7.85025 0.999629 6.65954 1.29813 5.48973C1.61116 4.26301 2.2285 3.20505 3.18897 2.42182C4.20109 1.59644 5.42443 1.16262 6.7448 1.08232C8.496 0.97582 10.248 0.933726 12 0.937851C13.7519 0.933726 15.5039 0.97582 17.2552 1.08232C18.5755 1.16262 19.7989 1.59644 20.811 2.42182C21.7715 3.20505 22.3888 4.26301 22.7018 5.48973C23.0003 6.65954 23.0187 7.85025 23.035 9.04045C23.0485 10.0269 23.0596 11.0135 23.062 12Z"
+                                              style="stroke: var(--on-surface-variant)" stroke-width="1.5" stroke-miterlimit="10" />
+                                            <path
+                                              d="M16.875 12C16.875 14.7183 14.6714 16.9219 11.9531 16.9219C9.23484 16.9219 7.03125 14.7183 7.03125 12C7.03125 9.28174 9.23484 7.07815 11.9531 7.07815C14.6714 7.07815 16.875 9.28174 16.875 12Z"
+                                              style="stroke: var(--on-surface-variant)" stroke-width="1.5" stroke-miterlimit="10" />
+                                            <path
+                                              d="M19.875 5.67188C19.875 6.4485 19.2454 7.07812 18.4687 7.07812C17.6921 7.07812 17.0625 6.4485 17.0625 5.67188C17.0625 4.89526 17.6921 4.26563 18.4687 4.26563C19.2454 4.26563 19.875 4.89526 19.875 5.67188Z"
+                                              style="fill: var(--on-surface-variant)" />
+                                          </g>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_66_1657">
+                                            <rect width="24" height="24" fill="white" />
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                </a>
+                                
+                                <a href="https://github.com/faizukhan619" target="_blank" class="social-item">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_65_801)">
+                                        <path d="M14 0.583374C6.265 0.583374 0 6.74337 0 14.3407C0 20.4202 4.011 25.5757 9.5725 27.3934C10.2725 27.5229 10.5292 27.097 10.5292 26.7319C10.5292 26.4052 10.5175 25.5395 10.5117 24.3927C6.61733 25.2222 5.796 22.547 5.796 22.547C5.159 20.9592 4.2385 20.5345 4.2385 20.5345C2.97033 19.6817 4.3365 19.6992 4.3365 19.6992C5.74233 19.7949 6.48083 21.1167 6.48083 21.1167C7.72917 23.2202 9.758 22.6124 10.5583 22.2612C10.6843 21.371 11.0448 20.7655 11.445 20.4214C8.33583 20.0772 5.068 18.8942 5.068 13.6232C5.068 12.1217 5.6105 10.8944 6.50883 9.93187C6.35133 9.58421 5.87883 8.18537 6.63133 6.29071C6.63133 6.29071 7.80383 5.92204 10.4813 7.70121C11.6013 7.39554 12.7913 7.24387 13.9813 7.23687C15.1713 7.24387 16.3613 7.39554 17.4813 7.70121C20.1413 5.92204 21.3138 6.29071 21.3138 6.29071C22.0663 8.18537 21.5938 9.58421 21.4538 9.93187C22.3463 10.8944 22.8888 12.1217 22.8888 13.6232C22.8888 18.9082 19.6163 20.0714 16.5013 20.4097C16.9913 20.8227 17.4463 21.6662 17.4463 22.9554C17.4463 24.7964 17.4288 26.2757 17.4288 26.7225C17.4288 27.083 17.6738 27.5135 18.3913 27.3759C23.9925 25.5699 28 20.4109 28 14.3407C28 6.74337 21.7315 0.583374 14 0.583374Z" fill="#333333"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_65_801">
+                                        <rect width="28" height="28" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        
+                                </a>
+
+
+                                <a href="https://www.linkedin.com/in/mr-faiz-ali-khan/" target="_blank" class="social-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="26" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/></svg>
+                                        
+                                </a>
+
+                                        
+                                </a>
+
+                            </div>
+
+                          </div> 
+                          
+                          
+                          <!-- contact--form -->
+<div  class="contact-form">
+    
+    <h3 class="title-large">Let's Work Together</h3>
+
+    
+
+    <form method="post" id="form" class="input-wrapper">
+
+        <input type="hidden" name="access_key" value="6aa9a4f4-c98f-4bb9-a957-15a8d46f0b4a">
+
+      <input type="text" class="input-field" name="name" placeholder="Enter your name" required>
+      <input type="email" class="input-field" name="email" placeholder="Enter your email" required>
+      <input type="text" class="input-field" name="subject" placeholder="Subject*" required>
+
+      <textarea name="message" class="textarea" placeholder="Enter your Message"></textarea>
+
+          <button  class="btn label-large" id="send-button" type="submit">Send Message</button>
+          <div id="result"></div>
+    </form>
+</div>
+
+
+                        </div>
+
+                    </section>
+
+                    <!-- Why me -->
+
+                    <section class="section tab-content aboutme-tab" data-tab-content="about">
+                        <div class="container">
+                            <h2 class="section-title title-small">Discover My World</h2>
+
+                            <ul class="list">
+                                <li class="resume-item">
+                                    <div class="resume-card">
+                                       
+                                       <span class="body-medium card-text">
+
+                                                                        🚀 Aspiring React Frontend Developer | Passionate About Crafting Remarkable User Experiences 🚀  <br><br>
+
+                                Greetings! 👋  <br><br>
+
+                                I'm on a thrilling adventure towards becoming a React frontend developer, and my enthusiasm knows no bounds. While I might be new to this world, my fresh perspective, boundless ambition, and a penchant for thinking outside the box make me stand out. 💡 <br><br>
+
+                                <br>
+
+                                <h2 class="section-title title-small">🌟 Here's why you should pay attention:</h2> <br><br>
+
+                                🚀 I see code as a canvas for creativity, where I craft not just websites but engaging experiences that leave users in awe.   <br><br>
+                                
+                                🌌 Unconventional thinking is my superpower. I don't shy away from challenges; I embrace them, learn from them, and emerge stronger.  <br><br>
+
+                                💬 Quirky and playful? You bet! I believe in making work fun, because when you enjoy what you do, the results shine.  <br><br>
+
+                                🌈 Ambition fuels my determination to grow, learn, and push boundaries. I'm in this for the long haul, and I'm aiming for the stars!   <br><br>
+
+                                🔥 I bring an energetic vibe to every project, and I thrive in fast-paced, dynamic environments.  <br><br>
+
+                                🎯 My goal is simple: to create digital magic. I might be new, but I'm passionate, dedicated, and constantly expanding my toolkit.  <br><br>
+
+                                🌐 If you're seeking a developer who's not just coding but creating, someone who's ready to dive headfirst into the world of React and frontend development, you've found me.  <br><br>
+
+                                Let's connect and explore the possibilities of working together to bring unique, ambitious, and personable experiences to life. 🌍  <br><br>
+
+                                Don't hesitate to reach out; I'm always up for a tech chat, a challenge, or a cup of coffee (virtually, of course!). ☕
+
+                                       </span>
+
+                                    </div>
+                                </li>
+                            </ul>
+
+                            
+
+                          
+
+
+
+                          
+
+
+
+                        </div>
+                    </section>
+
+
+                </div>
+
+
+            </div>
+
+        </article>
+    </main>
+
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="container">
+ 
+            <li class="list">
+                
+            <a href="./assets//images//Resume.pdf" class="body-medium" target="_blank">Unlock My Resume</a> 
+                
+            </li>
+        </div>
+    </footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js link -->
+
+<script src="./js/script.js"></script>
+
+
+
+
+</body>
+</html>
